@@ -9,14 +9,15 @@ import random
 #7) Compare with Internet
 
 import random
+from collections import Counter
 
 SUITS = ["♠", "♥", "♦", "♣"]
 RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-CARDS_PER_SUIT = 13
+CARDS_PER_SUIT: int = 13
 TOTAL_CARDS = 52
 CARDS_PER_HAND = 5
 
-def build_deck():
+def build_deck() -> list:
     deck = []
     for i in range(TOTAL_CARDS):
         suit_index = i // CARDS_PER_SUIT
@@ -33,8 +34,6 @@ def deal_cards(deck, number_of_cards):
 
 def format_hand(hand):
     return ", ".join(f"{rank}{suit}" for suit, rank in hand)
-
-from collections import Counter
 
 def evaluate_hand(hand):
 
