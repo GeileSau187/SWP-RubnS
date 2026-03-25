@@ -1,4 +1,4 @@
-# gegeben ist eine loste von temperaturen in clesius.
+# gegeben ist eine Liste von temperaturen in celsius.
 # schreib ein python programm:
 # - eine funktion, welcher fehlwerte aus dieser liste rausfiltert (fehlwerte zwischen -60 und +60); rückgabe: bereinigte liste und anzahl der fehlwerte
 # - durchschnittstemperatur einer datenreihe berechnet und retoruniert
